@@ -1,4 +1,5 @@
 import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 
 const App = () => {
     const expenses = [
@@ -27,8 +28,8 @@ const App = () => {
             date: new Date(2023, 7, 14),
         }];
     return (<div>
-            <h2>Let's get started!</h2>
-            <Expenses items = {expenses}></Expenses>
+            <NewExpense/>
+            <Expenses items={expenses}></Expenses>
         </div>
     );
 }
